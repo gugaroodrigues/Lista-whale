@@ -5,9 +5,8 @@ public class listaWhile01{
         String nome = "";
         while(!nome.equalsIgnoreCase("sair")){
             nome = JOptionPane.showInputDialog(null, 
-            "Digite um nome ou tecle \"Fim \" para sair");
+            "Digite um nome ou tecle \"Sair \" para sair");
         }
-
 
     }
 }
