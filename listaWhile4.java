@@ -5,10 +5,10 @@ public class listaWhile4{
             JOptionPane.showInputDialog(null,
             "Digite o numero de carros que deseja cadastrar:")
         );
-        int cadastro = 1;
+        int cadastro = 0;
         double valor = 0;
         int anoDoCarro = 0;
-        String modelo = "";
+        String modelo =.trim();
         String modeloA = "";
         String modeloG = "";
         int somaAno = 0;
@@ -21,15 +21,16 @@ public class listaWhile4{
             valor = Double.parseDouble(JOptionPane.showInputDialog(null, "Valor do carro: "));
             anoDoCarro = Integer.parseInt(JOptionPane.showInputDialog(
                 null, "Ano do carro"));
-        char letra = modelo.charAt('0');
-             letra = Character.toLowerCase(letra);
+
+        char letra = modelo.charAt(0);
+
              
                   
         if (letra == 'a'){
-            modeloA = (modeloA + 1);
+            modeloA = modeloA + 1;
 
         }if (letra == 'g'){
-            modeloG = (modeloG + 1);
+            modeloG = modeloG + 1;
 
         }
         somaAno = somaAno + anoDoCarro;
@@ -38,9 +39,9 @@ public class listaWhile4{
         }
         int mediaAno = somaAno /quantidade;
         double mediaValor = somaValor / quantidade;
-         JOptionPane.showMessageDialog(null, "|Media anos dos carros| " + mediaAno +
-        "|Media valor| " + mediaValor + "|Carros que começam com \"G \"| " + modeloG +
-        "|Carros que começam com \"A\"| " + modeloA);
+         JOptionPane.showMessageDialog(null, "Media anos dos carros " + mediaAno +
+        "\nMedia valor " + mediaValor + "\nCarros que começam com \"G \" " + modeloG +
+        "\nCarros que começam com \"A\" " + modeloA);
 
         
 
