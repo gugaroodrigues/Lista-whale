@@ -8,7 +8,7 @@ public class listaWhile4{
         int cadastro = 0;
         double valor = 0;
         int anoDoCarro = 0;
-        String modelo =.trim();
+        String modelo ="";
         String modeloA = "";
         String modeloG = "";
         int somaAno = 0;
@@ -16,7 +16,6 @@ public class listaWhile4{
         
         while(quantidade > cadastro ){ 
             cadastro = cadastro + 1;
-
             modelo = JOptionPane.showInputDialog(null, "Digite o modelo do carro:");
             valor = Double.parseDouble(JOptionPane.showInputDialog(null, "Valor do carro: "));
             anoDoCarro = Integer.parseInt(JOptionPane.showInputDialog(

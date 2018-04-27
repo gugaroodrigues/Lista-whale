@@ -5,7 +5,7 @@ public class listaWhile3{
         double peso = Double.parseDouble(JOptionPane.
                          showInputDialog(null, "Informe um peso"));
 
-        while(peso > 0 && peso <300){
+        while(peso > 0 && peso <=300){
             peso = Double.parseDouble(JOptionPane.
                       showInputDialog(null, "Informe um peso"));
 
